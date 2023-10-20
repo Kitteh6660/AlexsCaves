@@ -1,0 +1,36 @@
+{
+  "parent": "alexscaves:recipes/root",
+  "criteria": {
+    "has_items": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexscaves:energized_galena_azure",
+              "alexscaves:energized_galena_scarlet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alexscaves:energized_galena_neutral"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_items"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alexscaves:energized_galena_neutral"
+    ]
+  },
+  "sends_telemetry_event": false
+}

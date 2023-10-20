@@ -1,0 +1,35 @@
+{
+  "parent": "alexscaves:recipes/root",
+  "criteria": {
+    "has_items": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexscaves:abyssmarine"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "alexscaves:stonecutter/abyssmarine_tiles_from_abyssmarine_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_items"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "alexscaves:stonecutter/abyssmarine_tiles_from_abyssmarine_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}
